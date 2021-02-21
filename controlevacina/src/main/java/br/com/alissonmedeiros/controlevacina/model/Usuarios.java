@@ -12,12 +12,12 @@ public class Usuarios {
 
     //Essa anotacao indica que o ID é minha chave primária e vai ser auto incrementavel no sistema
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    private Integer id;
 
     @Column(name = "cpf")
-    private Long cpf;
+    private long cpf;
 
     @Column(name = "nome",length = 100,unique = true)
     private String nome;
@@ -31,19 +31,17 @@ public class Usuarios {
 
 
     //Getters and Setters
-    public Long getId() {
-        return id;
-    }
+    public Integer getId() {        return id;    }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public Long getCpf() {
+    public long getCpf() {
         return cpf;
     }
 
-    public void setCpf(Long cpf) {
+    public void setCpf(long cpf) {
         this.cpf = cpf;
     }
 
