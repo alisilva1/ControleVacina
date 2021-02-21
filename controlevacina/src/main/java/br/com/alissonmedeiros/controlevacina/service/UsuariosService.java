@@ -13,14 +13,11 @@ public class UsuariosService implements InterfaceUsuariosService {
 
     @Override
     public Usuarios inserirUsuarios(Usuarios usuario) {
-        /*
-        if (usuario.getCpf() != null && usuario.getDataNascimento() != null && usuario.getEmail() != null && usuario.getNome() != null) {
-
+        if (usuario.getDataNascimento() != null && usuario.getEmail() != null && usuario.getNome() != null) {
             dao.save(usuario);
             return usuario;
         }
-        */
-        return usuario;
+        return null;
 
     }
         //Validar regras

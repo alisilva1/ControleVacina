@@ -1,13 +1,12 @@
 package br.com.alissonmedeiros.controlevacina.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import javax.persistence.*;
 import java.util.Date;
 
 //Ele é uma entidade que vai ser gerenciada pela minha ferramenta de ORM no caso ser gerenciada pelo JPA e essa classe vai corresponder a uma tabela do BD
 @Entity
-@Table(name = "tbl_usuarios")
+@Table(name = "tbl_usuarios", schema = "db_controle_vacinas_zup")
 public class Usuarios {
 
     //Essa anotacao indica que o ID é minha chave primária e vai ser auto incrementavel no sistema
@@ -22,11 +21,11 @@ public class Usuarios {
     @Column(name = "nome",length = 100,unique = true)
     private String nome;
 
-    @Column(name = "e-mail",length = 100,unique = true)
+    @Column(name = "email",length = 100,unique = true)
     private String email;
 
     @JsonFormat(pattern="dd/MM/yyyy")
-    @Column(name = "data_nascimento")
+    @Column(name = "dataNascimento")
     private Date dataNascimento;
 
 
