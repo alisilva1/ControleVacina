@@ -8,8 +8,7 @@
 
 ## Como Utilizar:
 
-<p>Para conseguir cadastrar o usuario basta enviar um 
-JSON para esse endereço:  /cadastrarusuario, com esse formato: </p>
+<p>Para conseguir cadastrar o usuario basta enviar um JSON para esse endereço:  /cadastrarusuario, com esse formato: </p>
 <p><b>
 {
     "cpf":12312312312,
@@ -20,14 +19,8 @@ JSON para esse endereço:  /cadastrarusuario, com esse formato: </p>
 </b></p>
 Obs: Só é permitido o cadastro de Usuarios com nome e e-mail distintos de outros usuarios e todos os campos devem ser preenchidos.
 
-
 <br>
-<br>
-<br>
-
-<p>
-para cadastrar vacinas enviar o JSON para o endereço: /cadastrarvacina, com esse formato:
-</p>
+<p>para cadastrar vacinas enviar o JSON para o endereço: /cadastrarvacina, com esse formato:</p>
 
 <p><b>
 {
