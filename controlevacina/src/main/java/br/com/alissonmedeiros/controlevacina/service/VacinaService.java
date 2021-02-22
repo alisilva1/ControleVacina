@@ -19,15 +19,12 @@ public class VacinaService implements InterfaceVacinaService{
     @Override
     public Vacina cadastrarVacina(Vacina vacina){
         Usuarios usuarioVacinado = daoUsuarios.findByEmail(vacina.getEmail());
-        System.out.println(usuarioVacinado);
-        //Criar uma função de busca Id atraves do getby e-mail
-        /*
-        Usuarios temId;
-        if (1=2) {
+        Integer idUsuario = usuarioVacinado.getId();
+        vacina.setEmail(Integer.toString(idUsuario));
+        if (idUsuario!= null) {
             dao.save(vacina);
             return vacina;
         }
-        */
         return null;
     }
 }
