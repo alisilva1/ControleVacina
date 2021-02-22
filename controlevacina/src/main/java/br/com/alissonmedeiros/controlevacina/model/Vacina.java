@@ -19,7 +19,7 @@ public class Vacina {
     @Column(name = "nome",length = 50)
     private String nome;
 
-    @Column(name = "tbl_usuarios_id",length = 11)
+    @Column(name = "tbl_usuarios_id",length = 50)
     private String email;
 
     @JsonFormat(pattern="dd/MM/yyyy")

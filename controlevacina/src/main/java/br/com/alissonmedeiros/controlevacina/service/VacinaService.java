@@ -19,11 +19,17 @@ public class VacinaService implements InterfaceVacinaService{
     @Override
     public Vacina cadastrarVacina(Vacina vacina){
         Usuarios usuarioVacinado = daoUsuarios.findByEmail(vacina.getEmail());
-        Integer idUsuario = usuarioVacinado.getId();
-        vacina.setEmail(Integer.toString(idUsuario));
-        if (idUsuario!= null) {
-            dao.save(vacina);
-            return vacina;
+        try {
+            if (usuarioVacinado.getId() != null) {
+                Integer idUsuario = usuarioVacinado.getId();
+                vacina.setEmail(Integer.toString(idUsuario));
+                dao.save(vacina);
+                return vacina;
+            }
+
+        }
+        catch(Exception ex){
+            System.out.println("DEBUG = "+ ex.getMessage());
         }
         return null;
     }

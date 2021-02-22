@@ -31,7 +31,15 @@ public class UsuariosService implements InterfaceUsuariosService {
 
     @Override
     public Usuarios findByEmail(String email){
-        Usuarios encontrado = dao.findByEmail(email);
+        Usuarios encontrado = null;
+        try{
+            if(dao.findByEmail(email)!=null){
+                encontrado = dao.findByEmail(email);
+            }
+        }
+        catch(Exception ex){
+            System.out.println("DEBUG = "+ ex.getMessage());
+        }
         return encontrado;
     }
 
