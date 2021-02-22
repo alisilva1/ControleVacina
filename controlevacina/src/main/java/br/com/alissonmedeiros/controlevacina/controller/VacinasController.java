@@ -1,8 +1,6 @@
 package br.com.alissonmedeiros.controlevacina.controller;
 
-import br.com.alissonmedeiros.controlevacina.model.Usuarios;
 import br.com.alissonmedeiros.controlevacina.model.Vacina;
-import br.com.alissonmedeiros.controlevacina.service.InterfaceUsuariosService;
 import br.com.alissonmedeiros.controlevacina.service.InterfaceVacinaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

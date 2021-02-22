@@ -28,8 +28,11 @@ public class UsuariosService implements InterfaceUsuariosService {
         return null;
 
     }
-        //Validar regras
-        //Nome,e-mail,Data nascimento,CPF
-        //Verificar se existe e-mail e CPF
+
+    @Override
+    public Usuarios findByEmail(String email){
+        Usuarios encontrado = dao.findByEmail(email);
+        return encontrado;
+    }
 
 }
