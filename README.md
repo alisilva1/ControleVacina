@@ -8,7 +8,7 @@
 
 ## Como Utilizar:
 
-<p>Para conseguir cadastrar o usuario basta enviar um JSON para esse endereço:  /cadastrarusuario, com esse formato: </p>
+<p>Para cadastrar o usuario basta enviar um JSON para esse endereço:  /cadastrarusuario, com esse formato: </p>
 <p><b>
 {
     "cpf":12312312312,
