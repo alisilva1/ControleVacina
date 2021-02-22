@@ -13,10 +13,18 @@ public class UsuariosService implements InterfaceUsuariosService {
 
     @Override
     public Usuarios inserirUsuarios(Usuarios usuario) {
-        if (usuario.getDataNascimento() != null && usuario.getEmail() != null && usuario.getNome() != null) {
-            dao.save(usuario);
-            return usuario;
+        //Primeira Regra será validar se o objeto não foi preenchido, caso algum campo não seja preenchido vai retornar o erro 400
+        //Devido ao JPA ter a opcao do unique na classe usuarios consigo retornar o erro 400 de forma mais facil ao retornar null no inserir usuarios
+        try{
+            if (usuario.getDataNascimento() != null && usuario.getEmail() != null && usuario.getNome() != null && usuario.getCpf() != null) {
+                dao.save(usuario);
+                return usuario;
+            }
         }
+        catch(Exception ex){
+            System.out.println("DEBUG = "+ ex.getMessage());
+        }
+
         return null;
 
     }

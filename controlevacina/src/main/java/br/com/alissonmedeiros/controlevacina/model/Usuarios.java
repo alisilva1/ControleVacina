@@ -16,7 +16,7 @@ public class Usuarios {
     private Integer id;
 
     @Column(name = "cpf")
-    private long cpf;
+    private Long cpf;
 
     @Column(name = "nome",length = 100,unique = true)
     private String nome;
@@ -36,11 +36,11 @@ public class Usuarios {
         this.id = id;
     }
 
-    public long getCpf() {
+    public Long getCpf() {
         return cpf;
     }
 
-    public void setCpf(long cpf) {
+    public void setCpf(Long cpf) {
         this.cpf = cpf;
     }
 
