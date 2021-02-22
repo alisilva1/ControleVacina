@@ -19,8 +19,9 @@
 </b></p>
 Obs: Só é permitido o cadastro de Usuarios com nome e e-mail distintos de outros usuarios e todos os campos devem ser preenchidos.
 
-<br>
-<p>para cadastrar vacinas enviar o JSON para o endereço: /cadastrarvacina, com esse formato:</p>
+<br><br>
+
+<p>Para cadastrar vacinas enviar o JSON para o endereço: /cadastrarvacina, com esse formato:</p>
 
 <p><b>
 {
