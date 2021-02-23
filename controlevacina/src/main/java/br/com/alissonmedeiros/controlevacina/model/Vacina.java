@@ -5,12 +5,11 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import javax.persistence.*;
 import java.util.Date;
 
-//Ele é uma entidade que vai ser gerenciada pela minha ferramenta de ORM no caso ser gerenciada pelo JPA e essa classe vai corresponder a uma tabela do BD
 @Entity
 @Table(name = "tbl_vacinas", schema = "db_controle_vacinas_zup")
 public class Vacina {
 
-    //Essa anotacao indica que o ID é minha chave primária e vai ser auto incrementavel no sistema
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_vacina")

@@ -9,7 +9,6 @@ import java.util.Date;
 @Table(name = "tbl_usuarios", schema = "db_controle_vacinas_zup")
 public class Usuarios {
 
-    //Essa anotacao indica que o ID é minha chave primária e vai ser auto incrementavel no sistema
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
