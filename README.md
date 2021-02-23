@@ -1,4 +1,4 @@
-# API Cxdxstro de Vxcinxs 
+# API Cadastro de Vacinas 
 
 ## Descrição do Projeto
 <p align="center">Esse projeto busca criar um banco de dados disponível para cadastro e controle de vacinados</p>
