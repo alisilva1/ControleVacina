@@ -4,7 +4,10 @@
 <p align="center">Esse projeto busca criar um banco de dados disponível para cadastro e controle de vacinados</p>
 
 ## Aplicações necessárias:
-<p align="center">Basta baixar o arquivo para uma pasta local através do comando xpto, fazer a instalação do MYSQL community service</p>
+<p align="center">Basta baixar o arquivo para uma pasta local.<br> 
+    Fazer a instalação do MYSQL community service.<br>
+    Configurar na aplicação o aplication.properties com o login e senha do banco.<br>
+    Rodar o script para criação das tabelas e realizar as requisições abaixo.<br></p>
 
 ## Como Utilizar:
 
